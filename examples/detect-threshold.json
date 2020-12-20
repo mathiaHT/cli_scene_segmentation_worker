@@ -1,0 +1,22 @@
+{
+    "job_id": 123,
+    "parameters": [
+        {
+            "id": "command_template",
+            "type": "string",
+            "value": "scenedetect -i {source_path} -o {destination_folder} detect-threshold list-scenes"
+        },
+		{
+			"id": "source_path",
+			"type": "string",
+			"store": "environment",
+			"value": "SOURCE_PATH"
+		},
+		{
+			"id": "destination_folder",
+			"type": "string",
+			"store": "environment",
+			"value": "DESTINATION_FOLDER"
+		}
+	]
+}
